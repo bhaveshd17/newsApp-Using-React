@@ -1,0 +1,16 @@
+#nav-logo{
+    /* color: #ff1616; */
+    font-weight: 500;
+}
+.nav-link{
+    /* color: #ff1616 !important; */
+    width: 75px;
+    height: 40px;
+    transition: all .09s ease-in-out;
+}
+.nav-link:hover{
+    font-size: 17px;
+    color: white !important;
+    /* color: #ff0d0d !important; */
+    font-weight: 500;
+}
