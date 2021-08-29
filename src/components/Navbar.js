@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom'
 export class Navbar extends Component {
 
     render() {
@@ -7,40 +7,34 @@ export class Navbar extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom-fixed">
                     <div className="container-fluid">
-                        <a className="navbar-brand m-0 p-0 ms-5" id="nav-logo" href="/" >
-                        <img src="https://res.cloudinary.com/dovpwi9ea/image/upload/v1630085186/newapp_logo_til0wx.png" alt="..." width="50" height="50"/>
-                        </a>
+                        <Link className="navbar-brand m-0 p-0 ms-5" id="nav-logo" to="/" >
+                        <img id="logo" src="https://res.cloudinary.com/dovpwi9ea/image/upload/v1630085186/newapp_logo_til0wx.png" alt="..." width="50" height="50"/>
+                        </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="/">Home</a>
+                            <ul className="navbar-nav">
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/">Home</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">About</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/business">Business</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">business</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/entertainment">Entertainment</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link mx-2" style={{width: '120px'}} href="/">entertainment</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/health">Health</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">general</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/science">Science</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">health</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/sports">Sports</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">science</a>
-                                </li>
-                                <li className="nav-item me-2">
-                                    <a className="nav-link" href="/">sports</a>
-                                </li>
-                                <li className="nav-item me-2">
-                                    <a className="nav-link" href="/">technology</a>
+                                <li className="nav-item ms-5">
+                                    <Link className="nav-link" to="/technology">Technology</Link>
                                 </li>
                             </ul>
                         </div>
